@@ -1,0 +1,13 @@
+.env
+.env.local
+.env.*.local
+node_modules/
+.vercel/
+.netlify/
+dist/
+build/
+*.log
+*.zip
+*.key
+*.pem
+git-index.tmp*

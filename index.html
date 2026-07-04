@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobPilot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">JP</div>
+          <div>
+            <strong>JobPilot</strong>
+            <span>Guarded job automation</span>
+          </div>
+        </div>
+        <nav id="nav" class="nav"></nav>
+        <div class="plan-card">
+          <span class="eyebrow">Current plan</span>
+          <strong>Autopilot</strong>
+          <div class="usage-line"><span></span></div>
+          <small>37 of 80 applications used</small>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <span class="eyebrow">Workspace</span>
+            <h1 id="pageTitle">Dashboard</h1>
+          </div>
+          <div class="top-actions">
+            <button class="icon-button" title="Export tracker" id="exportCsvBtn">Export</button>
+            <button class="primary" id="quickJobBtn">Add Job</button>
+          </div>
+        </header>
+
+        <section id="view" class="view"></section>
+      </main>
+    </div>
+
+    <dialog id="jobDialog" class="dialog">
+      <form method="dialog" class="dialog-panel">
+        <div class="dialog-head">
+          <div>
+            <span class="eyebrow">New job</span>
+            <h2>Add a job to analyze</h2>
+          </div>
+          <button class="ghost" value="cancel">Close</button>
+        </div>
+        <div class="form-grid">
+          <label>Company <input id="companyInput" placeholder="Example: Northstar Labs" /></label>
+          <label>Job title <input id="titleInput" placeholder="Product Analyst" /></label>
+          <label>Source
+            <select id="sourceInput">
+              <option>LinkedIn</option>
+              <option>Indeed</option>
+              <option>Glassdoor</option>
+              <option>ZipRecruiter</option>
+              <option>Company website</option>
+              <option>Greenhouse</option>
+              <option>Lever</option>
+              <option>Workday</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Salary <input id="salaryInput" placeholder="$95k-$120k" /></label>
+          <label class="wide">Job URL <input id="urlInput" placeholder="https://..." /></label>
+          <label class="wide">Job description <textarea id="descriptionInput" rows="5" placeholder="Paste the job description here"></textarea></label>
+        </div>
+        <menu>
+          <button class="ghost" value="cancel">Cancel</button>
+          <button class="primary" id="saveJobBtn" value="default">Analyze Job</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <script src="connectors.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
