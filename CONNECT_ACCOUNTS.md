@@ -38,6 +38,12 @@ OPENAI_API_KEY=...
 
 The app uses `/api/rewrite-resume` so the key is never placed in browser code.
 
+In Lovable, add the same variable in environment/secrets settings:
+
+```text
+OPENAI_API_KEY=your_new_openai_api_key
+```
+
 ## 3. Stripe
 
 In Stripe:

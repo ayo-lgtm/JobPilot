@@ -34,7 +34,7 @@ Credential-based integrations such as Workable, BambooHR, LinkedIn, Indeed, Glas
 
 ## Deployment
 
-Before deploying, follow [CONNECT_ACCOUNTS.md](./CONNECT_ACCOUNTS.md).
+Before deploying, follow [CONNECT_ACCOUNTS.md](./CONNECT_ACCOUNTS.md) and add the Lovable secrets listed in [LOVABLE_ENVIRONMENT.md](./LOVABLE_ENVIRONMENT.md).
 
 ### Netlify
 
