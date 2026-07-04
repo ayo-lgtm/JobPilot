@@ -5,7 +5,7 @@ export default async function Page() {
   const cookieStore = await cookies();
   const supabase = createClient(cookieStore);
 
-  const { data: jobs } = await supabase.from("jobpilot_jobs").select();
+  const { data: jobs } = await supabase.from("jobs").select();
 
   return (
     <main>
