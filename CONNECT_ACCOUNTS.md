@@ -17,6 +17,15 @@ In Supabase:
 
 Use the service role key only in Vercel environment variables.
 
+For Lovable/Next.js browser access, add these public environment variables:
+
+```text
+NEXT_PUBLIC_SUPABASE_URL=...
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=...
+```
+
+The local `.env.local` file is intentionally ignored by Git. Add these values in Lovable's environment settings too.
+
 ## 2. OpenAI
 
 Create an API key in your OpenAI dashboard.
